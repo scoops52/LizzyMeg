@@ -4,6 +4,10 @@ import './Form.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleCheck, faCircleXmark } from '@fortawesome/free-regular-svg-icons';
 
+import emailjs from 'emailjs-com';
+import { useRef } from 'react';
+import ReCAPTCHA from 'react-google-recaptcha';
+
 const Form = () => {
     const [nameValidity, setNameValidity] = useState(null);
     const [emailValidity, setEmailValidity] = useState(null);
@@ -12,6 +16,7 @@ const Form = () => {
     const [emailClassName, setEmailClassName] = useState('form-control');
     const [messageClassName, setMessageClassName] = useState('form-control');
     const [name, setName] = useState('');
+    const [captchaToken, setCaptchaToken] = useState('');
 
    
 
@@ -60,10 +65,29 @@ const Form = () => {
         setName(e.target.value);
     }
 
+    //  *****emailJS******
+
+    const form = useRef();
+    const handleCaptchaChange = (token) => {
+        setCaptchaToken(token);
+    }
+    const sendEmail = (e) => {
+        e.preventDefault();
+        if (captchaToken) {
+            emailjs.sendForm('service_6h3545w', 'template_b139nh3', form.current, 'HM4xy5fugu2lLLMLl')
+                .then((result) => {
+                    console.log(result.text);
+                }, (error) => {
+                    console.log(error.text);
+                });
+        } else {
+            alert('Please verify that you are a human')
+        }
+    };
 
 
     return (
-        <form   noValidate>
+        <form ref={form} onSubmit={sendEmail}>
             <input type="hidden" name="form-name" value="contact" />
             <div className="form-floating info">
                 <input name='name' type="text" placeholder='name' className={nameClassName}  onBlur={checkNameValidity} onChange={handleName} required />
@@ -127,6 +151,14 @@ const Form = () => {
             </div>
             <div className='btn-container'>
                 <button className='submit-btn' type='submit'>Send</button>
+            </div>
+            <div className='captcha-container'>
+            <ReCAPTCHA
+                sitekey='6LcV-wklAAAAACLLv86NqxGtUabwi9raw36CLqtK'
+                onChange={handleCaptchaChange}
+                
+                
+            />
             </div>
         </form>
     )
