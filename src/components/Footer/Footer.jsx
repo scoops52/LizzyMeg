@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import StyledNavLink from '../StyledNavLink/StyledNavLink';
+
 import FooterStyles from './Footer.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaperPlane } from '@fortawesome/free-regular-svg-icons';

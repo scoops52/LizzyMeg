@@ -13,7 +13,6 @@ import galleryImage12 from './12.JPG';
 
 
 
-import { images } from './index';
 
 const galleryImages = [
     {
@@ -53,5 +52,7 @@ const galleryImages = [
         img: galleryImage5
     }
 ]
+
+// eslint-disable-next-line
 
 export default galleryImages

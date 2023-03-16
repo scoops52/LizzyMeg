@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleCheck, faCircleXmark } from '@fortawesome/free-regular-svg-icons';
 
 const Form = () => {
-    const [isValidated, setIsValidated] = useState(false);
     const [nameValidity, setNameValidity] = useState(null);
     const [emailValidity, setEmailValidity] = useState(null);
     const [messageValidity, setMessageValidity] = useState(null);
@@ -61,17 +60,6 @@ const Form = () => {
         setName(e.target.value);
     }
 
-    // const inputClassNames = ['form-control'];
-    // if (inputValidity) {
-    //     inputClassNames.push('was-validated');
-    //     console.log(inputClassNames);
-    // };
-
-    // const formClassNames = ['needs-validation'];
-    // if (isValidated) {
-    //     formClassNames.push('was-validated');
-    // }
-    // formClassNames.push('was-invalidated');
 
 
     return (
