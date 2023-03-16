@@ -20,7 +20,7 @@ const Navbar = () => {
             <div className={NavbarStyles.logoContainer}>
                 <NavLink
                     className={NavbarStyles.logoLink}
-                    to='/home'
+                    to='/'
                 >
 
                     <img src={images.logo} alt='logo' />
