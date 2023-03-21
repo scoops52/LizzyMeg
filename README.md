@@ -11,9 +11,13 @@ I first had to understand what the client wanted in their site. She told me the 
 
 I used React Router in order to make the site as seamless as possible, and to be able to reuse components throughout the site. The components I built for this site as well as my own personal site actually inspired me to start builing my own UI Kit. 
 
+Using React also helped me make more complex components such as a dynamic contact form. I also used EmailJS to handle any form submissions. That way any inquiries could go straight to my client's email. 
+
 I spent a lot of time on the design elements, making sure the website was responsive on multiple devices. With so many different design elements, I used SASS (SCSS syntax) instead of just conventional CSS. 
 
 # Code features
+Dynamic Form with different states, as well as submission to client's email [Code](https://github.com/scoops52/LizzyMeg/blob/9e71e2ec35b0f6df68b645d13429fb050654198b/src/pages/Contact/Form/Form.jsx)
+
 Site route paths, making use of React Router [Code](https://github.com/scoops52/LizzyMeg/blob/62c365502c37167e50f21f1fff66a95a12ad9181/src/App.js)
 
 Navbar component with different styling and elements based on screen size [Code](https://github.com/scoops52/LizzyMeg/tree/main/src/components/Navbar)
