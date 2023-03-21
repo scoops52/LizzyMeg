@@ -1,3 +1,31 @@
+# Link to final build
+[LizzyMeg.com](https://lizzymeg.com/)
+
+# Why I built this project 
+I made this project for a client. A professional dancer who needed a website to market herself for future gigs. 
+Becuase of this I gained a lot of experience working with a client and bringing their vision to life. 
+It also helped me improve my skills in responsive web design as well as React Router.
+
+# How I built this project 
+I first had to understand what the client wanted in their site. She told me the content she wanted to include and we decided on the best organization of the site. She did not have a hard design or knew exactly what she wanted it to look like but we had multiple conversations to go over certain colors, fonts, and other design elements. 
+
+I used React Router in order to make the site as seamless as possible, and to be able to reuse components throughout the site. The components I built for this site as well as my own personal site actually inspired me to start builing my own UI Kit. 
+
+I spent a lot of time on the design elements, making sure the website was responsive on multiple devices. With so many different design elements, I used SASS (SCSS syntax) instead of just conventional CSS. 
+
+# Code features
+Site route paths, making use of React Router [Code](https://github.com/scoops52/LizzyMeg/blob/62c365502c37167e50f21f1fff66a95a12ad9181/src/App.js)
+
+Navbar component with different styling and elements based on screen size [Code](https://github.com/scoops52/LizzyMeg/tree/main/src/components/Navbar)
+
+Responsive image gallery with modal [Code](https://github.com/scoops52/LizzyMeg/blob/62c365502c37167e50f21f1fff66a95a12ad9181/src/pages/Media/Gallery/Gallery.jsx)
+
+# What I would do different next time 
+Through all our conversations about the deisgin and organization, next time I would come up with a more concrete design mock-up (something I did when building my own website).
+
+I also would keep page load times in mind while building the site. React Router helps cut down the load time however with all the images, they can sometimes take a bit longer to load. I am planning on fixing this however next time I will keep this in mind while still building the site.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

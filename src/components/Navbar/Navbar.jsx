@@ -67,38 +67,6 @@ const Navbar = () => {
                     </motion.div>
                 )}
             </div>
-
-
-            {/* <div className='app__navbar-menu'>
-        { !open ? 
-        <HiMenuAlt4 onClick={handleClick} />
-        :
-        <HiX onClick={handleClick} /> }
-      </div>
-      <div className='app__navbar-dropdown'>
-        {open && (
-          <motion.div
-            whileInview={{ x: [300, 0] }}
-            transition={{ durtation: 0.85, ease: 'easeOut' }}
-          >
-            <ul>
-              {['about', 'skills', 'portfolio', 'contact'].map((item) => (
-                <li key={`link-{item}`}>
-                  <NavLink to={`${item}`}>{item}</NavLink>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-        )}
-      </div>
-      <div className='app__navbar-socials' >
-        <Link to='https://www.linkedin.com/' target='_blank' rel='noopener noreferrer'>
-          <AiOutlineLinkedin size={25} className='social' />
-        </Link>
-        <Link to='https://github.com/' target='_blank' rel='noopener noreferrer'>
-          <AiOutlineGithub size={25} className='social' />
-        </Link>
-      </div> */}
         </nav>
     )
 }

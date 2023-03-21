@@ -54,15 +54,6 @@ const Gallery = ({ galleryImages }) => {
                                 </li>
                                 <li className={GalleryStyles.singleImageLi}></li>
                                 </>
-
-
-                            // <div
-                            //     className={GalleryStyles.singleImage}
-                            //     key={index}
-                            //     onClick={() => handleOpenModal(index)}
-                            // >
-                            //     <img src={slide.img} alt='' />
-                            // </div>
                         )
                     })
                 }
